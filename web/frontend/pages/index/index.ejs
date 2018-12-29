@@ -3,6 +3,10 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="/pages/index/index.css">
+	<link rel="stylesheet" type="text/css" href="/pages/index/mailer.css">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
 	<% include ../../partials/head/head %>
 	
 	<title>Aplipage.pl</title>
@@ -15,7 +19,7 @@
 	<section class="page" id="landingPage">
 		
 		<figure class="image centered">
-			<img src="/resources/aLogo.png">
+			<img style="max-width: 90%" src="/resources/aLogo.png">
 		</figure>
 	
 	</section>
@@ -23,59 +27,130 @@
 	<section class="page">
 		
 		<div class="centered">
-			<h1 class="h1"> Nasza kadra </h1>
-			<div class="columns">
-				<div class="column"> 
-					adhaldja
-				</div>
-				<div class="column"> 
-					aldhalsd
-				</div>
-			</div>
+			<h1 class="h1 black"> Nasza kadra </h1>
+			<div class="tile is-ancestor">
+				<div class="tile">
+					<div class="tile is-parent"> 
+						<div class="tile is-child">
+							<figure class="image">
+								<img class="roundedCorners" src="/resources/kuba.png">
+							</figure>	
+
+							<p>
+							Nazywam się Jakub Szmyd, zajmuję się projektowaniem graficznym. Ukończyłem technikum graficzne, a obecnie jestem studentem zarządzania.
+							</p>
+						</div>
+					</div>
+					<div class="tile is-parent"> 
+						<div class="tile is-child">
+							
+							<figure class="image">
+								<img class="roundedCorners" src="/resources/pawel.png">
+							</figure>
+
+							<p>
+							Nazywam się Paweł Parczyk jestem studentem Informatyki na Politechnice Wrocławskiej zajmuję się tworzeniem oprogramowania komuterowego do wielu różnych zastosowań w tym Raspberry PI, Web. 
+							</p>
+						</div>
+					</div>
+				</div><!--tile-->
+			</div><!--ancestor-->
 		</div>
 		
 	</section>
 
 	<section class="page" id="done">
 		
-		<div class="centered">
-			<h1 class="h1"> Nasze realizacje </h1>
-			<div class="columns is-multiline">
-				<div class="column"> 
-					<a href="powtran-polska.pl"> Powtran-Polska </a>
-				</div>
-				<div class="column"> 
-					<a href="nowasylwetka.pl"> Nowa sylwetka </a>
-				</div>
-				<div class="column"> 
-					<a href="elmecosolar.pl"> Elmecosolar </a>
-				</div>
-				<div class="column"> 
-					<a href="instytutlibra.pl"> Szkoła języków obcych Libra </a>
-				</div>
-				<div class="column"> 
-					<a href="elmecoautomatyka.pl"> Elmeco Automatyka </a>
-				</div>
-			</div>
+		<div class="centered" >
+			<h1 class="h1 white"> Nasze realizacje </h1>
+			<div class="tile is-ancestor">
+				<div class="tile is-vertical"> 
+					<div class="tile">
+						
+						<div class="tile is-parent">
+						<div class="tile is-child">
+							<h1 class="underline bottom"> <a class="link" href="http://nowasylwetka.pl"> Nowa sylwetka </a> </h1>
+							<img src="/resources/nowasylwetka.png"> 
+						</div>
+						</div>
+						<div class="tile is-parent">
+						<div class="tile is-child"> 
+							<h1 class="underline bottom"> <a class="link" href="http://elmecosolar.pl"> Elmecosolar </a> </h1>
+							<img src="resources/elmecosolar.png">
+						</div> 
+						</div>
+
+					</div><!--tile "row" -->
+					<div class="tile">
+						<div class="tile is-parent">
+						<div class="tile is-child"> 
+							<h1 class="underline bottom"> <a class="link" href="http://instytutlibra.pl"> SJO Libra </a> </h1>
+							<img src="/resources/sjolibra.png">
+						</div>
+						</div>
+						<div class="tile is-parent">
+						<div class="tile is-child">
+							<h1 class="underline bottom"> <a class="link" href="http://powtran-polska.pl"> Powtran-Polska </a> </h1>
+							<img src="resources/powtran.png">
+						</div>
+						</div>
+					</div> <!--tile row -->
+				</div> <!--vertical -->
+			</div> <!--ancestor -->
 		</div>
 
 	</section>
 
 	<section class="page" id="contact">
 		
-		<div class="centered">
-			<h1 class="h1"> Kontakt </h1>
-			<div class="columns">
-				<div class="column"> 
-					adhaldja
-				</div>
-				<div class="column"> 
-					aldhalsd
-				</div>
-			</div>
+		<div class="centered is80">
+			<h1 class="h1 black"> Kontakt </h1>
+			<div class="tile is-ancestor">
+				<div class="tile">
+					<div class="tile is-parent"> 
+						<div class="tile is-child">
+							
+						<% include mailer %>
+
+						</div>
+					</div>
+					<div class="tile"> 
+						<div class="tile is-parent">
+							<div class="tile is-child ">
+								<figure class="image">
+									<img class="roundedCorners small" src="/resources/kuba.png">
+								</figure>
+								<p class="bold">
+								<i class="far fa-envelope"></i> jszmyd@ap.pl <br>
+								<i class="fas fa-phone"></i> +48 696965006 <br>
+								<i class="fas fa-home"></i> Wesoła 8 <br>
+								Siedlakowice <br>
+								</p>
+							</div>
+						</div>
+						<div class="tile is-parent">
+							<div class="tile is-child">
+								<figure class="image">
+									<img class="roundedCorners small" src="/resources/pawel.png">
+								</figure>
+
+								<p class="bold">
+								<i class="far fa-envelope"></i> pparczyk@wp.pl<br>
+								<i class="fas fa-phone"></i> +48 60241749 <br>
+								<i class="fas fa-home"></i> Kamieńskiego 84/9
+								Wrocław <br>
+								</p>
+							</div>
+						</div>
+					</div> <!--tile-->
+				</div><!--tile-->
+			</div><!--ancestor-->
 		</div>
 
 	</section>
 
 </body>
 </html>
+
+
+<script type="text/javascript" src="/pages/index/mailer.js"></script>

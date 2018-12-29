@@ -1,0 +1,56 @@
+<div class="level">
+	<div class="level-item input-box">
+		<input type="text" name="name" id="name">
+		<label for="name">Imię</label>
+		<span class="tooltip">Twoje imię</span>
+	</div>
+</div>
+<div class="level">
+	<div class="level-item input-box">
+		<input type="text" name="name" id="surname">
+		<label for="surname">Nazwisko</label>
+		<span class="tooltip">Twoje nazwisko</span>
+	</div>
+</div><!-- level -->
+<div class="level">
+	<div class="level-item input-box">
+		<input type="text" name="name" id="email">
+		<label for="email">Twój e-mail</label>
+		<span class="tooltip">Email na który odeślemy odpowiedź. Musi zawierać @</span>
+	</div>
+</div> <!-- level -->
+
+<div class="level">
+	<div class="level-item input-box">
+		<input type="text" name="name" id="title">
+		<label for="title">Temat wiadomości</label>
+		<span class="tooltip">Prosty i treściwy temat opisujący problem</span>
+	</div>
+</div> <!-- level -->
+
+<div class="level">
+	<div class="level-item">
+		<textarea style="width: 100%" rows="15" name="content" id="content" placeholder="Treść wiadomości..."></textarea>
+	</div>
+</div>
+<div class="level">
+	<div class="level-left">
+	<div class="level-item">
+		<input type="checkbox" name="sendMeBack" id="sendMeBack">
+		<label for="sendMeBack" style="margin-left: 1em;">Czy wysłać kopię wiadomości na "Twój email"?</label>
+	</div>
+	</div>
+</div>
+
+
+<div class="level">
+	<div class="level-left"></div>
+	<div class="level-right">
+		<div class="level-item">
+			<button name="send" id="send" v-on:click="send()" style="position: relative;">Wyślij</button>
+		</div>
+	</div>
+</div>
+<p>
+* wysyłając wiadomość zgadzasz się na przetwarzanie informacji, podanych przez ciebie w formularzu, dla celów komunikacyjnych i marketingowych serwisu aplipage.pl  
+</p>

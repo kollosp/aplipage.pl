@@ -5,3 +5,9 @@
 #done{
 	background-image: url('/resources/landingBg.png'); 
 }
+
+.small{
+	max-width: 150px;
+	height: auto;
+	margin: auto;
+}
